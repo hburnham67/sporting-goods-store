@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bookings - Harrison's Sporting Goods</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<meta name="description" content="Harrison's Sporting Goods is the most popular sporting goods store in the Fox Valley!">
+  <meta name="keywords" content="harrison's sporting goods, sporting goods, sports">
+  <meta name="author" content="Harrison Burnham">
+</head>
+<body>
+	<!-- Page Container -->
+	<div id="container">
+		<header class="header">
+			<div>
+				<h1>Harrison's Sporting Goods</h1>
+			</div>
+			
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html" title="Harrison's Sporting Goods" class="active">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="about.html" title="Find out more about Harrison's Sporting Goods">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="news.html" title="Latest News about Harrison's Sporting Goods">
+							News
+						</a>
+					</li>
+					<li>
+						<a href="selection.html" title="The in-store selection for Harrison's Sporting Goods">
+							Selection
+						</a>
+					</li>
+					<li>
+						<a href="locations.html" title="Harrison's Sporting Goods locations.">
+							Locations
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" title="Contact Us">
+							Contact Us!
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div>
+			<section>
+			  <h1>Contact Us!</h1>
+			  <p>
+			  	Please use the form below to send us any questions, comments or concerns you may have. You will then be contacted by a staff member via your time and method of choice
+			  </p>
+			  <form action="contact.php" method="POST">
+			  	<fieldset id="contact">
+				  	<div class="frmspace">
+				  		<label for="name">Name:</label>
+				  		<input type="text" name="name" id="name" placeholder="e.g. John Smith" autofocus>
+				  	</div>
+				  	<div class="frmspace">
+				  		<label for="phone">Phone:</label>
+				  		<input type="tel" name="phone" id="phone" placeholder="e.g. 555-555-5555">
+				  	</div>
+				  	<div class="frmspace">
+				  		<label for="email">Email:</label>
+				  		<input type="email" name="email" id="email" placeholder="e.g. joe@example.com">
+				  	</div>
+				  	<div class="frmspace">
+				  		<label for="location">Location:</label>
+				  		<select name="location" id="location">
+				  			<option>2400 Oregon St, Oshkosh, WI 54901</option>
+				  			<option>1222 Wisconsin Ave, Appleton, WI 54911</option>
+				  			<option>1457 Harrison St, Neenah, WI 54956</option>
+				  		</select>
+				  	</div>
+				  	<div class="frmspace">
+						  <label for="marketing">Please check this box if you would like to receive special offers from Harrison's Sporting Goods</label>
+						  <input type="checkbox" name="marketing" id="marketing" value="1">
+						</div>
+						<div class="frmspace">
+							<label for="message">Message:</label>
+							<textarea name="message" id="message" cols="50" rows="3" placeholder="e.g. I'm wondering if you carry this type of baseball bat..."></textarea>
+						</div>
+						<br>
+						<div class="frmspace">
+							<label for="contactTime">Please choose the best time for us to reach you -<br>(If no selection, we will reach out to you as soon as possible):</label>
+							<input type="datetime-local" name="contactTime" id="contactTime">
+						</div>
+						<br>
+				  		<label>Which method do you prefer to be contacted by?</label>
+						<div class="frmspace">
+				    	<input type="radio" name="method" id="Phone" value="phone">
+				  		<label for="Phone">Phone</label><br>
+				  		<input type="radio" name="method" id="Email" value="Email">
+							<label for="Email">Email</label><br>
+							<input type="radio" name="method" id="Either" value="Either">
+							<label for="Either">Either</label>
+						</div>
+					<div class="frmspace">
+						<button type="submit">Submit</button>
+					</div>
+				</fieldset>
+			  </form>
+			</section>
+		</div>
+
+		<footer>
+			<small>&copy; 2017 Harrison's Sporting Goods All Rights Reserved</small> - <a href="sitemap.html" title="Links to all the pages on this website">Sitemap</a>
+		</footer>
+	</div>
+</body>
+</html>
